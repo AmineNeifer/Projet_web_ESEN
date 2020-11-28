@@ -3,100 +3,100 @@
 <html lang="fr">
 
 <head>
-	<title> Contactez-nous+ </title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Contactez-nous+ </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>
-	<header>
-		<div>
-			<div>
-				<a href="#"> Home</a>
-			</div>
+    <header>
+        <div>
+            <div>
+                <a href="#"> Home</a>
+            </div>
 
-			<div>
-				<!-- snippet location forms_search -->
-				<form action="/search.php">
-					<label for="search_query">Search</label>
-					<input name="search_query" id="search_query" data-error-message="Search field cannot be empty."
-						autocomplete="off">
-					<label>
+            <div>
+                <!-- snippet location forms_search -->
+                <form action="/search.php">
+                    <label for="search_query">Search</label>
+                    <input name="search_query" id="search_query" data-error-message="Search field cannot be empty." autocomplete="off">
+                    <label>
 						<input type="submit" style="display: none;">
 					</label>
-				</form>
+                </form>
 
-			</div>
-		</div>
-	</header>
-	<section>
-		<nav>
-			<ul>
-				<li><a href="../home.html">home</a></li>
-				<li><a href="news.html">news</a></li>
-				<li><a href="contact.html">contact</a></li>
-				<li><a href="about.html">about us</a></li>
-			</ul>
-		</nav>
-	</section>
-	<!-- Formulaire de contact -->
-	<fieldset>
-		<legend>Contactez-nous</legend>
-		<form name="Formul" method="post" action="contact.php">
-			<div>
-				<label for="fname">Prénom</label>
-			</div>
-			<div>
-				<input type="text" id="fname" name="firstname" placeholder="Prénom..">
-			</div>
-			<div>
-				<label for="lname">Nom</label>
-			</div>
-			<div>
-				<input type="text" id="email" name="email" placeholder="Nom..">
-			</div>
-			<div>
-				<label for="email">Email</label>
-			</div>
-			<div>
-				<input type="text" id="lname" name="lastname" placeholder="Nom..">
-			</div>
-			<div>
-				<label for="Sujet">Sujet</label>
-			</div>
-			<div>
-				<input type="radio" name="c" id="1" />
-				<label for="1">Information</label>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <br>
+    <section>
+        <nav id="navbar">
+            <a href="../home.html">home</a>
+            <a href="news.html">news</a>
+            <a href="contact.html" class="active">contact</a>
+            <a href="about.html">about us</a>
+        </nav>
+    </section>
+    <fieldset>
+        <legend>Contactez-nous</legend>
+        <form name="Formul" method="post" action="contact.php" class="cont_form">
+            <div>
+                <label for="fname">Prénom</label>
+            </div>
+            <div>
+                <input type="text" id="fname" name="firstname" placeholder="Prénom..">
+            </div>
+            <div>
+                <label for="lname">Nom</label>
+            </div>
+            <div>
+                <input type="text" id="email" name="email" placeholder="Nom..">
+            </div>
+            <div>
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="text" id="lname" name="lastname" placeholder="Nom..">
+            </div>
+            <div>
+                <label for="Sujet">Sujet</label>
+            </div>
+            <div>
+                <input type="radio" name="c" id="1" />
+                <label for="1">Information</label>
 
-				<input type="radio" name="c" id="2" />
-				<label for="2">Aide</label>
+                <input type="radio" name="c" id="2" />
+                <label for="2">Aide</label>
 
-				<input type="radio" name="c" id="3" checked />
-				<label for="3">Suggestion</label>
+                <input type="radio" name="c" id="3" checked />
+                <label for="3">Suggestion</label>
 
-				<input type="radio" name="c" id="4" />
-				<label for="4">Remerciment</label>
-			</div>
-			<div>
-				<label for="comm">Message:</label>
-			</div>
-			<div>
-				<textarea id="comm" rows="3" cols="50"></textarea>
-			</div>
-			<div>
-				<input type="checkbox" name="urg" id="urg" checked />
-				<label for="urg">URGENT!</label>
-			</div>
-			<div>
-				<button name="valider" type="submit">Envoyer</button>
-			</div>
-			</article>
-		</form>
-	</fieldset>
-	<footer>
-		<p>Footer</p>
-	</footer>
+                <input type="radio" name="c" id="4" />
+                <label for="4">Remerciment</label>
+            </div>
+            <div>
+                <label for="comm">Message:</label>
+            </div>
+            <div>
+                <textarea id="comm" rows="3" cols="50"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="urg" id="urg" checked />
+                <label for="urg">URGENT!</label>
+            </div>
+            <div>
+                <button name="valider" type="submit">Envoyer</button>
+            </div>
+            </article>
+        </form>
+    </fieldset>
 
+    <footer>
+        <p>Footer</p>
+    </footer>
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>
