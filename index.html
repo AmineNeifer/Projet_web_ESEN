@@ -1,55 +1,67 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-	<head>
-		<title> auto+ </title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	
-	<body>
-		
-		<header>
-			<div>
-				<div>
-					<a href="#"> Home</a>
-				</div>
-				
-				<div>
-					<!-- snippet location forms_search -->
-					<form action="/search.php">
-						<label for="search_query">Search</label>
-						<input name="search_query" id="search_query" data-error-message="Search field cannot be empty." autocomplete="off">
-						<label>
-							<input type="submit" style="display: none;">
-						</label>
-					</form>
-					
-				</div>
-			</div>
-			</header>
-		<section>
-			
-			<nav>
-				<ul>
-					<li><a href="html/home.html">home</a></li>
-					<li><a href="html/news.html">news</a></li>
-					<li><a href="html/contact.html">contact</a></li>
-					<li><a href="html/about.html">about us</a></li>
-				</ul>
-			</nav>
 
-			<article>
-				<h1>London</h1>
-			</article>
+<head>
+	<title> auto+ </title>
+	<meta charset="UTF-8">
+	<!-- bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/sofia" type="text/css"/>
+	<!-- navigation bar -->
+	<link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+
+	<header>
+
+		<div class="header-container">
+			<a href="#" class="name">auto+</a>
+		</div>
+
+		<div class="topnav">
+			<div class="login-container">
+				<form action="/action_page.php" >
+					<input type="text" placeholder="Username" name="username">
+					<input type="text" placeholder="Password" name="psw">
+					<button type="submit">Login</button>
+				</form>
+			</div>
+		</div>
+
+		<div class="search-container">
+			<form class="example" action="action_page.php">
+				<input type="text" placeholder="Search.." name="search">
+				<button type="submit" ><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+
+	</header>
+	<section>
+
+		<hr>
+		<br>
+		<section>
+			<nav id="navbar">
+				<a href="index.html" class="active">home</a>
+				<a href="html/news.html">news</a>
+				<a href="html/contact.html">contact</a>
+				<a href="html/about.html">about us</a>
+			</nav>
 		</section>
 
 		<footer>
 			<p>Footer</p>
 		</footer>
-		
-	
-	</body>
-	
-	
+		<script src="../javascript/script.js"></script>
+
+
+</body>
+
+
 </html>
