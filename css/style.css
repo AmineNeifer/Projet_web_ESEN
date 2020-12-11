@@ -21,6 +21,11 @@ p, h1 , h2, h3, h4, h5, h6, a, legend {
 	color: #191970;
 }
 
+.header-container p {
+	left: 0;
+	font-size: 20px;
+}
+
 #name {
 	text-decoration: none;
 }
