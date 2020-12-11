@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="eng">
 
 <head>
-	<title> News+ </title>
+	<title>News</title>
 	<meta charset="UTF-8">
 	<!-- bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<!-- library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/sofia" type="text/css"/>
+	<link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/sofia" type="text/css" />
 	<!-- navigation bar -->
 	<link rel="stylesheet" href="../css/navbar.css">
 	<!-- bootstrap js -->
@@ -24,7 +24,7 @@
 
 	<header>
 		<div class="header-container">
-			<a href="../index.html" class="name">Car'ing</a>
+			<a href="../index.html" id="name">Car'ing</a>
 		</div>
 
 	</header>
@@ -33,28 +33,36 @@
 	<div>
 		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
-			  <div class="navbar-header">
-				<a class="navbar-brand" href="../index.html">Car'ing</a>
-			  </div>
-			  <ul class="nav navbar-nav">
-				<li><a href="../index.html">Home</a></li>
-				<li class="active"><a href="news.html">News</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.html">About</a></li>
-			  </ul>
-			  <ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-			  </ul>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="../index.html">Car'ing</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="../index.html">Home</a></li>
+					<li class="active"><a href="news.html">News</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="last.html">Last-Releases</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+				</ul>
 			</div>
-		  </nav>
+		</nav>
 	</div>
-
+	<article>
+		<h2> Corona news</h2>
+		<div class="row">
+			<iframe class="col-md-6" src="https://public.domo.com/cards/bWxVg" width="100%" height="600"
+				marginheight="0" marginwidth="0" frameborder="0"></iframe>
+			<iframe class="col-md-6" src="https://public.domo.com/cards/aKg4r" width="100%" height="600"
+				marginheight="0" marginwidth="0" frameborder="0"></iframe>
+		</div>
+	</article>
 
 	<footer>
-		<p>Footer</p>
+		<p id="footer-p">&#169 Copyright; all rights reserved</p>
 	</footer>
-	<script src="../javascript/script.js"></script>
 </body>
 
 </html>

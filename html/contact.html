@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="eng">
 
 <head>
-	<title> Contact-us+ </title>
+	<title> Contact-Us </title>
 	<meta charset="UTF-8">
 	<!-- bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" />
 	<!-- css -->
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/contact.css">
 	<!-- library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/sofia" type="text/css" />
-	<!-- navigation bar -->
-	<link rel="stylesheet" href="../css/navbar.css">
 	<!-- bootstrap js -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -24,9 +23,8 @@
 	<header>
 
 		<div class="header-container">
-			<a href="../index.html" class="name">Car'ing</a>
+			<a href="../index.html" id="name">Car'ing</a>
 		</div>
-
 
 	</header>
 
@@ -40,6 +38,7 @@
 				<li><a href="../index.html">Home</a></li>
 				<li><a href="news.html">News</a></li>
 				<li class="active"><a href="contact.html">Contact</a></li>
+				<li><a href="last.html">Last-Releases</a></li>
 				<li><a href="about.html">About</a></li>
 			  </ul>
 			  <ul class="nav navbar-nav navbar-right">
@@ -49,20 +48,21 @@
 			</div>
 		  </nav>
 	</div>
-	<fieldset>
-		<legend>Contactez-nous</legend>
-		<form name="Formul" method="post" action="contact.php" class="cont_form">
+
+	<div class="fieldset row">
+		<legend>Contact-Us</legend>
+		<form name="Formul" method="post" action="contact.php" class="col-md-6">
 			<div>
-				<label for="fname">Prénom</label>
+				<label for="fname">Name</label>
 			</div>
 			<div>
-				<input type="text" id="fname" name="firstname" placeholder="Prénom..">
+				<input type="text" id="fname" name="firstname" placeholder="Name..">
 			</div>
 			<div>
-				<label for="lname">Nom</label>
+				<label for="lname">Last name</label>
 			</div>
 			<div>
-				<input type="text" id="lname" name="lastname" placeholder="Nom..">
+				<input type="text" id="lname" name="lastname" placeholder="Last Name..">
 			</div>
 			<div>
 				<label for="email">Email</label>
@@ -71,7 +71,7 @@
 				<input type="text" id="email" name="email" placeholder="Email..">
 			</div>
 			<div>
-				<label for="Sujet">Sujet</label>
+				<label for="Sujet">Subject</label>
 			</div>
 			<div>
 				<input type="radio" name="c" id="1" />
@@ -90,10 +90,10 @@
 				<label for="comm">Message:</label>
 			</div>
 			<div>
-				<textarea id="comm" rows="3" cols="50"></textarea>
+				<textarea id="comm" rows="3" cols="50" placeholder="feel free to express yourself.."></textarea>
 			</div>
 			<div>
-				<input type="checkbox" name="urg" id="urg" checked />
+				<input type="checkbox" name="urg" id="urg" checked/>
 				<label for="urg">URGENT!</label>
 			</div>
 			<div>
@@ -101,12 +101,11 @@
 			</div>
 			</article>
 		</form>
-	</fieldset>
+	</div>
 
 	<footer>
-		<p>Footer</p>
+		<p id="footer-p">&#169 Copyright; all rights reserved</p>
 	</footer>
-	<script src="../javascript/script.js"></script>
 </body>
 
 </html>

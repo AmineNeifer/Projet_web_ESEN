@@ -1,4 +1,27 @@
+
 .article {
 	height:100%;
 	width:100%;
+}
+.card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #004E7C;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  }
+.col-md-4 {
+	padding: 0px;
+	border: 1px solid #800000;
+	background-color: #DCE1E3;
+}
+.prod {
+	min-height: 650px;
+}
+.text-center {
+	color: #800000;
 }
