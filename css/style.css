@@ -67,10 +67,10 @@ footer {
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	color: #B73225;
+	color: #9D9D9D;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
-	color: #d47a72;
+	background-color: #d47a72;
 }
 
 .navbar-inverse .navbar-nav>.active>a,

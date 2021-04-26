@@ -13,7 +13,10 @@
 	cursor: pointer;
 	width: 100%;
 	font-size: 18px;
-  }
+}
+.card button:hover {
+	background-color: #800000;
+}
 .col-md-4 {
 	padding: 0px;
 	border: 1px solid #800000;
